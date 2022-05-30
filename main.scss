@@ -49,7 +49,7 @@ body{
     margin: 26px auto;
     max-width: 800px;
     width: 100%;
-    background-color: red;
+    // background-color: red;
     
     .storyes{
         width: 470px;
@@ -86,11 +86,96 @@ body{
         }
     }
 
-    section{
+    #main{
         background-color: #fff;
         width: 470px;
         border-radius: 10px;
-    
-        height: 700px;
+        margin-top: 15px;
+        border: 1px solid #ccc;
+        header{
+            height: 60px;
+            border-bottom: 1px solid black;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            gap: 10px;
+            justify-content: space-between;
+            .bio{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            .avatar-border{
+                width: 45px;
+                height: 45px;
+                border-radius: 45px;
+                background: linear-gradient(#DE0046, #F7A34B);
+                .avatar {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 45px;
+                    img{
+                        border: 2.8px solid #fff;
+                        border-radius: 45px;
+                    }
+                }
+            }
+        }
+        #post-photo{
+            img{
+                width: 100%;
+            }
+        }
+        .footer-buttons{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+            nav{
+                display: flex;
+            }
+        }
+        .detaiels{
+            padding: 0 20px;
+            text-align: left;
+            .likes{
+                margin-bottom: 8px;
+            }
+            .info{
+                margin-bottom: 8px;
+                .name{
+                    font-weight: 600;
+                }
+                .des{
+                    font-weight: 100;
+                }
+            }
+            .show-comments{
+                font-size: 14px;
+                color: #8E8E8E;
+            }
+            .info-date{
+                font-size: 10px;
+                color: #8E8E8E;
+
+            }
+        }
+        .add-comments-footer{
+            display: flex;
+            align-items: center;
+            padding: 0 18px;
+            border-top: 1px solid grey;
+            margin-top: 10px;
+            justify-content: space-between;
+            .comments-text{
+                width: 100%;
+                padding: 10px 10px;
+            }
+            .submit{
+                color: #0095F6;
+                background-color: transparent;
+            }
+        }
     }
 }

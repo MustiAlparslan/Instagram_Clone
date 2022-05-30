@@ -63,7 +63,6 @@ body {
   margin: 26px auto;
   max-width: 800px;
   width: 100%;
-  background-color: red;
 }
 
 #container .storyes {
@@ -115,10 +114,142 @@ body {
   margin-top: 5px;
 }
 
-#container section {
+#container #main {
   background-color: #fff;
   width: 470px;
   border-radius: 10px;
-  height: 700px;
+  margin-top: 15px;
+  border: 1px solid #ccc;
+}
+
+#container #main header {
+  height: 60px;
+  border-bottom: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  gap: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#container #main header .bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+#container #main header .avatar-border {
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#DE0046), to(#F7A34B));
+  background: linear-gradient(#DE0046, #F7A34B);
+}
+
+#container #main header .avatar-border .avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 45px;
+}
+
+#container #main header .avatar-border .avatar img {
+  border: 2.8px solid #fff;
+  border-radius: 45px;
+}
+
+#container #main #post-photo img {
+  width: 100%;
+}
+
+#container #main .footer-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+}
+
+#container #main .footer-buttons nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#container #main .detaiels {
+  padding: 0 20px;
+  text-align: left;
+}
+
+#container #main .detaiels .likes {
+  margin-bottom: 8px;
+}
+
+#container #main .detaiels .info {
+  margin-bottom: 8px;
+}
+
+#container #main .detaiels .info .name {
+  font-weight: 600;
+}
+
+#container #main .detaiels .info .des {
+  font-weight: 100;
+}
+
+#container #main .detaiels .show-comments {
+  font-size: 14px;
+  color: #8E8E8E;
+}
+
+#container #main .detaiels .info-date {
+  font-size: 10px;
+  color: #8E8E8E;
+}
+
+#container #main .add-comments-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 18px;
+  border-top: 1px solid grey;
+  margin-top: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#container #main .add-comments-footer .comments-text {
+  width: 100%;
+  padding: 10px 10px;
+}
+
+#container #main .add-comments-footer .submit {
+  color: #0095F6;
+  background-color: transparent;
 }
 /*# sourceMappingURL=main.css.map */
