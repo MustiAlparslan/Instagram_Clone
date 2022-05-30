@@ -8,4 +8,117 @@
   outline: 0;
   list-style-type: none;
 }
+
+body {
+  background-color: #ddd;
+}
+
+#header {
+  width: 100%;
+  background-color: #fff;
+  height: 53px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 12;
+}
+
+#header #header-container {
+  max-width: 935px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 53px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#header #header-container nav ul {
+  gap: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header #header-container .search-box {
+  width: 215px;
+  height: 36px;
+  background-color: #EFEFEF;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+#container {
+  margin: 26px auto;
+  max-width: 800px;
+  width: 100%;
+  background-color: red;
+}
+
+#container .storyes {
+  width: 470px;
+  background-color: #fff;
+  height: 120px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 23px;
+  gap: 10px;
+}
+
+#container .storyes .story-border {
+  background: -webkit-gradient(linear, left top, left bottom, from(#DE0046), to(#F7A34B));
+  background: linear-gradient(#DE0046, #F7A34B);
+  width: 68px;
+  height: 68px;
+  border-radius: 68px;
+}
+
+#container .storyes .story-border .story-avatar {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container .storyes .story-border .story-avatar img {
+  border: 2.8px solid #fff;
+  border-radius: 68px;
+}
+
+#container .storyes .story-border .story-name {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+#container section {
+  background-color: #fff;
+  width: 470px;
+  border-radius: 10px;
+  height: 700px;
+}
 /*# sourceMappingURL=main.css.map */
