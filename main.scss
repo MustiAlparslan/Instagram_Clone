@@ -7,9 +7,10 @@
   outline:0;
   list-style-type: none;
 }
+
 body{
-    // background-color: #FAFAFA;
-    background-color: #ddd;
+    background-color: #FAFAFA;
+    // background-color: #ddd;
 }
 #header{
     width: 100%;
@@ -19,6 +20,8 @@ body{
     align-items: center;
     justify-content: center;
     z-index: 12;
+    position: fixed;
+    box-shadow: 0 0 1px 1px #ddd;
     #header-container{
         max-width: 935px;
         width: 100%;
@@ -26,6 +29,11 @@ body{
         align-items: center;
         height: 53px;
         justify-content: space-between;
+        #logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         nav ul{
             gap: 22px;
             display: flex;
@@ -43,14 +51,35 @@ body{
 
 
 
+.button-color{
+    color :#0095F6;
+    background-color: transparent;
+}
 
 
+.see-all{
+    background-color: transparent;
+}
+.my-name{
+    color: #8E8E8E;
+}
+.name-info{
+    color: #262626;
+}
+
+.for-u,.other-name{
+    color: #8E8E8E;
+}
 #container{
-    margin: 26px auto;
+    position: absolute;
     max-width: 800px;
+    top: 75px;
+    left: 50%;
+    transform: translate(-50%);
     width: 100%;
     // background-color: red;
-    
+    display: flex;
+    gap: 28px;
     .storyes{
         width: 470px;
         background-color: #fff;
@@ -94,7 +123,7 @@ body{
         border: 1px solid #ccc;
         header{
             height: 60px;
-            border-bottom: 1px solid black;
+            // border-bottom: 1px solid black;
             display: flex;
             align-items: center;
             padding: 0 20px;
@@ -176,6 +205,54 @@ body{
                 color: #0095F6;
                 background-color: transparent;
             }
+        }
+    }
+
+   
+}
+
+#right-bar{
+    // background-color: red;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    position: fixed;
+    right: 245px;
+    top: 80px;
+    .profile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .center{
+            display: flex;
+            align-items: center;
+        }
+    }
+    .about{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .users-info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .users-info-center{
+            display: flex;
+            align-items: center;
+        }
+    }
+    .right-bar-footer{
+        color:#C7C7C7;
+        p{
+            margin-bottom: 6px;
+            font-size: 13px;
+        }
+        div{
+            font-size: 15px;
         }
     }
 }
